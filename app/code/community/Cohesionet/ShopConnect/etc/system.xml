@@ -21,7 +21,7 @@
  *
  * @category    Cohesionet
  * @package     Cohesionet_ShopConnect
- * @copyright   Copyright (c) 2014 Cohesionet (http://www.cohesionet.com)
+ * @copyright   Copyright (c) 2015 Cohesionet (http://www.cohesionet.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
@@ -63,9 +63,9 @@
                         </enabled>
                         <account translate="label">
                             <label>Account ID</label>
-			    <comment><![CDATA[If you do not have an store account ID, please  click <a href='https://www.cohesionet.com/web/?co_componentID=co.comp_storePageID&co_register=true&co_hostID=magento'  target="_blank"> registration </a> to register your store and get your store account ID,
+			    <comment><![CDATA[If you do not have an store account ID, please  click <a href='https://www.cohesionet.com/web/ui/actor/widgets?co_uiRole=register&co_hostID=magento'  target="_blank"> registration </a> to register your store and get your store account ID,
 			     				  <p>If you already registered your store, following the following steps to find your store account ID
-			     				  <ul> <li>Click <a href="https://www.cohesionet.com" target="_blank">Cohesionet Buddy Shopping Home</a></li> <li>Use your store adminstrator account login</li> <li>Click the top-left corner button</li> <li>Switch to seller</li> <li>Click your store name </li> <li>In the store management menu, click store setting. You should be able to find your store accountID</li><ul></p>
+			     				  <ul> <li>Click <a href="https://www.cohesionet.com/web/ui/actor/widgets" target="_blank">Cohesionet Buddy Shopping Home</a></li> <li>Use your store adminstrator account login</li> <li>Click the top-left corner button</li> <li>Switch to seller</li> <li>Click your store name </li> <li>In the store management menu, click store setting. You should be able to find your store accountID</li><ul></p>
 			    ]]></comment>
                             <frontend_type>text</frontend_type>
                             <backend_model>cohesionet_shopConnect/config_account</backend_model>
