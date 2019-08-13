@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Cohesionet_ShopConnect</name>
+    <version>1.0.6</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Buddy Shopping</summary>
+    <description>eCommerce widgets that connect people for shopping together and offer built-in sales support, instant and effective</description>
+    <notes>Support 1.5.0.0 &amp; later</notes>
+    <authors><author><name>Ying Qi</name><user>cohesionet</user><email>contact@cohesionet.com</email></author></authors>
+    <date>2015-06-24</date>
+    <time>02:08:18</time>
+    <contents><target name="magecommunity"><dir name="."><dir name="Cohesionet"><dir name="ShopConnect"><dir name="Block"><file name="Embed.php" hash="40d25533f9d57f0b7bf0d2212ad0ffe3"/><file name="Product.php" hash="9c6253bf07f085f3fb1b1460e06ce457"/></dir><dir name="Helper"><file name="Data.php" hash="638f3b7ce41fcf43b0677f78c444e53c"/><file name="Price.php" hash="248bbaf520cea1422be2a62db0f58ab4"/></dir><dir name="Model"><dir name="Config"><file name="Account.php" hash="b5fcad8eb15dd55e1f368ea79e09219d"/><file name="Enabled.php" hash="291e6fcd5ff732ccf4aa81c67e21ad88"/></dir><dir name="Resource"><file name="Setup.php" hash="9c6c731829d315ce9dccf3c751305338"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="809096c21e4905db78af80ff8e445d9b"/><file name="config.xml" hash="efbfc350e057a9c27bc38d957e7c79e5"/><file name="system.xml" hash="e8ad596896a002a473b2c255e68c1bbe"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="."><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="cohesionet"><file name="embed.phtml" hash="b4cd850b7c216df34e2c7f48d143565b"/><file name="product.phtml" hash="3db15b0a6f1fb72068eb1cf4de31be4d"/></dir></dir><dir name="layout"><file name="cohesionet.xml" hash="881184e52fc97ef62e80d1e68f1b91bd"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="."><dir name="modules"><file name="Cohesionet_ShopConnect.xml" hash="a1bde50148d25ce029733dc3695a9be2"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>4.4.8</min><max>5.6.9</max></php></required></dependencies>
+</package>

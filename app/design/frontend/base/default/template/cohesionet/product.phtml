@@ -1,0 +1,60 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2015 Cohesionet LLC (http://www.cohesionet.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+
+<?php
+/**
+ * @var $this               Cohesionet_ShopConnect_Block_Product
+ * @var $cohesionetHelper        Cohesionet_ShopConnect_Helper_Data
+ * @var $cohesionetPriceHelper   Cohesionet_ShopConnect_Helper_Price
+ */
+$product = $this->getProduct();
+$cohesionetHelper = Mage::helper('cohesionet_shopConnect');
+$cohesionetPriceHelper = Mage::helper('cohesionet_shopConnect/price');
+?>
+
+<!-- Cohesionet Product ShopConnect -->
+
+<span style="display:none" co-data-type="item" co-id-type="url" 
+ 	<?php if($product->getImage() == 'no_selection') { ?>
+	    	co-data-image=<?php echo $product->getImageUrl()?>
+	<?php } else { ?>
+	    	co-data-image=<?php echo $product->getMediaConfig()->getMediaUrl($product->getImage())?>
+	<?php } ?>
+	 co-data-price=<?php echo number_format($product->getPrice(), 2) ?>
+	 co-data-discount=<?php echo number_format($product->getFinalPrice(), 2) ?>
+
+	<?php $specialPriceFromDate = $product->getSpecialFromDate(); if ($specialPriceFromDate) { ?>
+	 co-data-discount-start=<?php echo strtotime( $specialPriceFromDate) ?>
+	<?php } ?>
+
+	<?php $specialPriceToDate = $product->getSpecialToDate(); if ($specialPriceToDate) { ?>
+	 co-data-discount-end=<?php echo strtotime( $specialPriceToDate) ?>
+	<?php } ?>
+
+	 co-data-id=<?php echo $product->getProductUrl()?>>
+</span>
+
