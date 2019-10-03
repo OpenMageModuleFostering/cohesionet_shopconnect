@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Cohesionet_ShopConnect",
+    "name": "OpenMageModuleFostering\/Cohesionet_ShopConnect",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Buddy Shopping",
     "authors": [
-    {
-        "name": "Ying Qi",
-        "email": "contact@cohesionet.com"
-    }
-],
+        {
+            "name": "Ying Qi",
+            "email": "contact@cohesionet.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
