@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Cohesionet_ShopConnect",
+    "name": "openmage-module-fostering\/cohesionet_shopconnect",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Buddy Shopping",
     "authors": [
